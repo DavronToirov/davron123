@@ -104,4 +104,8 @@ bot.on('error', console.log)
       const playerFilter = (entity) => entity.type === 'player'
       const playerEntity = bot.nearestEntity(playerFilter)
   }
+"scripts": {
+  "start": "node server.js"
+}
+
 bot.on('physicTick', lookAtNearestPlayer)
