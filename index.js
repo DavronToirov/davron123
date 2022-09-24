@@ -81,12 +81,6 @@ bot.on('chat', (username, message) => {
     bot.chat(str)
     }
     }})
-    let step = 0
-          let sway = 1
-          let global = 0
-          let stop = false
-          let coming = false
-          // 1792
 
     function lookAtNearestPlayer () {
       const playerFilter = (entity) => entity.type === 'player'
@@ -114,37 +108,8 @@ bot.on('chat', (username, message) => {
         case 'equip dirt':
           equipDirt()
           break
-          case 'Kel':
-            const target = bot.players['_NoT_DaN1KnIgHt_'].entity
-            if (!target) {
-              bot.chat("Keldim")
-              break
-            }
-            const { x: playerX, y: playerY, z: playerZ } = target.position
-            bot.pathfinder.SetGoal(new GoalNear(playerX, playerY, playerZ,RANGE_GOAL))
-            break
-              case 'start':
-                global = 5
-                part()
-                return
-              case 'stop':
-                stop = true
-              case 'clear':
-                step = 0
-                global = 0
-                sway = 1
-                break
-              case 'uuid':
-                bot.chat(bot.player.uuid)
-                break
               }
             })
-
-bot.on('chat', (username, message) => {
-            const args = message.split(' ')
-            switch(args[0]) {
-            }})
-
 
     function sayItems (items = bot.inventory.items()) {
       const output = items.map(itemToString).join(', ')
