@@ -22,46 +22,6 @@ bot.chat(str)
 }
 }})
 bot.on('chat', (username, message) => {
-  if (username === "Sobirov777888")  {if (message.indexOf("Hello") !== -1) {
-  var replacement = "Hello",
-  toReplace = "Hello",
-  str = "Hello"
-  
-  str = str.replace(replacement, toReplace)
-  bot.chat(str)
-  }
-  }})
-  bot.on('chat', (username, message) => {
-    if (username === "Ergashovic_06")  {if (message.indexOf("Hello") !== -1) {
-    var replacement = "Hello",
-    toReplace = "Hello",
-    str = "Hello"
-    
-    str = str.replace(replacement, toReplace)
-    bot.chat(str)
-    }
-    }})
-    bot.on('chat', (username, message) => {
-      if (username === "WELLBERD")  {if (message.indexOf("Hello") !== -1) {
-      var replacement = "Hello",
-      toReplace = "Hello",
-      str = "Hello"
-      
-      str = str.replace(replacement, toReplace)
-      bot.chat(str)
-      }
-      }})
-      bot.on('chat', (username, message) => {
-        if (username === "ProUzMaxDev")  {if (message.indexOf("Hello") !== -1) {
-        var replacement = "Hello",
-        toReplace = "Hello",
-        str = "Hello"
-        
-        str = str.replace(replacement, toReplace)
-        bot.chat(str)
-        }
-        }})
-bot.on('chat', (username, message) => {
   if (username === '_NoT_DaN1KnIgHt_') {if (message.indexOf('@') !== -1) {
     var replacement = "@",
         toReplace = "",
